@@ -8,12 +8,12 @@ To overcome these challenges, I have developed an analytical tool that simulates
 
 ## Highlights
 
-1. Detection accuracy exceeded 0.9 when 20% of the analytes had their concentrations reduced to values within the range of the 0th and 5th percentiles.
-![](plot/accuracy_vs_perct_of_analyte.jpg)
+1. Detection recall score (true positive rate) exceeded 0.9 when 20% of the analytes had their concentrations reduced to values within the range of the 0th and 5th percentiles.
+![](plot/Recall_analyte_perct.jpg)
 <br>
 
 2. When the percentage of affected analytes is below 22%, analytes with lower variability in concentrations enhance the model's detection capability. As expected, increasing the number of altered analytes enables the model to detect adulterants regardless of the variability in analyte concentrations.
-![](plot/accuracy_high_low_vari_analyte_perct.jpg)
+![](plot/Recall_conc_variability.jpg)
 <br>
 
 3. Data visualization using PCA. To visualize the detection results, one can apply PCA on the dataset that includes potential adulterated samples. By color coding each data point according to the predicted labels from DBSCAN, we can gain insights into the detection outcomes. In the figure below, it shows that 2 out 3 adulterated products were successfully detected in blue. Please see **[analysis.ipynb](https://github.com/alexkychen/adulterated-product-detection/blob/main/analysis.ipynb)** for more details of the analysis and use cases.
